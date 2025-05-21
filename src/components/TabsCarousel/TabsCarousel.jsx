@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import styles from "./TabsCarousel.module.css";
@@ -39,8 +39,11 @@ const TabsCarousel = () => {
 
   return (
     <>
-      {/* Синий фон за слайдом */}
-      <div className={styles.backgroundShape}></div>
+      <div className={styles.descr}>
+      <div className={styles.title}>Fatures</div>
+      <div className={styles.text}>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</div>
+      </div>
+        <div className={styles.backgroundShape}></div>
       <div className={styles.tabsCarousel}>
         <div className={styles.tabsContainer}>
           {tabData.map((tab, index) => (
